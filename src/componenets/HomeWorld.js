@@ -22,7 +22,6 @@ export const Homeworld = () => {
 
     return (
         <div className='films-container'>
-            {console.log(char.homeworld)}
             {
                 char.homeworld ?
                     <>

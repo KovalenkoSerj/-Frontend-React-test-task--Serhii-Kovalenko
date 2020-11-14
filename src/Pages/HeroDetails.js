@@ -29,7 +29,6 @@ export const HeroDetails = () => {
         fetchData()
         return () => {
             charDispatch({ type: 'CLEAR_STATE' })
-            console.log(char);
         }
 
     }, [])
@@ -44,7 +43,6 @@ export const HeroDetails = () => {
                 }
             }
             favorites.data.push(char.data)
-            console.log(char.data.url);
             favoritesDispatch({ type: 'ADD_FAVORITES', payload: favorites.data })
             localStorage.setItem('favorites', JSON.stringify(favorites.data))
             message.success('Hero added to favorites')

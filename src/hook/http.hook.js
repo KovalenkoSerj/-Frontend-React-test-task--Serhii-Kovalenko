@@ -12,7 +12,6 @@ const useHttp = (dispatch) => {
 
     const response = await fetch(baseURL + url + params, options);
     const people = await response.json();
-    console.log('URL from hook ' + baseURL + url + params);
     if (!response.ok) {
       throw new Error(people.error);
     }

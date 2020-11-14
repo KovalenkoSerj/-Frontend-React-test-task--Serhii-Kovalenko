@@ -23,7 +23,7 @@ export const Favorites = () => {
                     {
                         data.map((item, index) => {
                             return (
-                                <li className='favorites-list__item' style={{ flexDirection: 'column' }} key={index} onClick={(e) => console.log(e)}>
+                                <li className='favorites-list__item' style={{ flexDirection: 'column' }} key={index}>
                                     <h2>{item.name}</h2>
                                     <p>Height: {item.height}</p>
                                     <p>Mass: {item.mass}</p>
